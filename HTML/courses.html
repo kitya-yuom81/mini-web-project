@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="w-full px-4 sm:px-8 lg:px-16 py-4 bg-white dark:bg-gray-900 shadow-md transition-colors duration-300"
+      >
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="/assets/images/logo.png" alt="Logo" class="w-14 h-10" />
+            <span class="font-bold text-xl dark:text-white">Teachuza</span>
+          </div>
+
+          <!-- Nav Links -->
+          <div class="hidden md:flex gap-10 text-base font-medium">
+            <a
+              href="/index.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >Home</a
+            >
+            <a
+              href="/HTML/about.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >About</a
+            >
+            <a
+              href="/HTML/courses.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >Courses</a
+            >
+          </div>
+
+          <!-- Contact & Theme Toggle -->
+          <div class="flex items-center gap-6">
+            <!-- Contact Us -->
+            <a
+              href="/HTML/contact.html"
+              class="bg-blue-600 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-full transition duration-200 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Contact Us
+            </a>
+
+            <!-- Light Toggle Button -->
+            <button
+              onclick="toggleDarkMode()"
+              class="w-36 h-12 bg-yellow-300 rounded-full flex items-center px-1 transition-all duration-300 dark:hidden"
+            >
+              <div
+                class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white"
+              ></div>
+            </button>
+
+            <!-- Dark Toggle Button -->
+            <button
+              onclick="toggleDarkMode()"
+              class="w-36 h-12 bg-[#0D2551] rounded-full items-center justify-end px-1 transition-all duration-300 hidden dark:flex"
+            >
+              <div
+                class="w-10 h-10 bg-[#15B9EA] rounded-full flex items-center justify-center text-white"
+              ></div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="w-full py-20 px-6 md:px-10 bg-accent dark:bg-gray-900">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12"
+        >
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2 md:pr-10 text-center md:text-left">
+            <h1 class="text-4xl font-bold text-black dark:text-white mb-2">
+              Learn Without
+            </h1>
+            <h2
+              class="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-4"
+            >
+              Limits
+            </h2>
+            <p class="text-lg text-gray-800 dark:text-gray-300 mb-6">
+              Learn IT skills with hands-on courses in coding, design, and more
+              built for all levels.
+            </p>
+            <a
+              href="../HTML/contact.html"
+              class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded shadow-md transition duration-200 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+            >
+              More Info
+            </a>
+          </div>
+
+          <!-- Image Section -->
+          <div
+            class="w-full md:w-1/2 md:pl-10 flex justify-center md:justify-end"
+          >
+            <img
+              src="/assets/images/withoutlimit.png"
+              alt="Puzzle Illustration"
+              class="w-full max-w-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full py-20 px-6 md:px-10 bg-white dark:bg-black">
+        <div class="max-w-7xl mx-auto text-center mb-14">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-black dark:text-white leading-tight"
+          >
+            Fostering a playful & engaging learning environment
+          </h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div
+            class="bg-[#4dd0e1] dark:bg-cyan-600 text-white rounded-2xl p-6 shadow hover:shadow-lg transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="../assets/images/frontend.png"
+                alt="Frontend Icon"
+                class="w-12 h-12"
+              />
+              <h3 class="text-xl font-semibold">Frontend Developer</h3>
+            </div>
+            <p class="mb-4 text-base">
+              Lessons on design that cover the most recent developments.
+            </p>
+            <button
+              class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+            >
+              Learn More →
+            </button>
+          </div>
+
+          <!-- Card 2 -->
+          <!-- Card 2: Backend Developer -->
+          <div
+            class="bg-[#4dd0e1] dark:bg-cyan-600 text-white rounded-2xl p-6 shadow hover:shadow-lg transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="../assets/images/backend.png"
+                alt="Backend Icon"
+                class="w-12 h-12"
+              />
+              <h3 class="text-xl font-semibold">Backend Developer</h3>
+            </div>
+            <p class="mb-4 text-base">
+              Lessons on design that cover the most recent developments.
+            </p>
+            <button
+              class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+            >
+              Learn More →
+            </button>
+          </div>
+
+          <!-- Card 3: Cloud Computing -->
+          <div
+            class="bg-[#4dd0e1] dark:bg-cyan-600 text-white rounded-2xl p-6 shadow hover:shadow-lg transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="../assets/images/cloud.png"
+                alt="Cloud Icon"
+                class="w-12 h-12"
+              />
+              <h3 class="text-xl font-semibold">Cloud Computing</h3>
+            </div>
+            <p class="mb-4 text-base">
+              Lessons on design that cover the most recent developments.
+            </p>
+            <button
+              class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+            >
+              Learn More →
+            </button>
+          </div>
+
+          <!-- Card 4: Data Analyst -->
+          <div
+            class="bg-[#26c6da] dark:bg-cyan-700 text-white rounded-2xl p-6 shadow hover:shadow-lg transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="../assets/images/dataanalyst.png"
+                alt="Data Icon"
+                class="w-12 h-12"
+              />
+              <h3 class="text-xl font-semibold">Data Analyst</h3>
+            </div>
+            <p class="mb-4 text-base">
+              Lessons on design that cover the most recent developments.
+            </p>
+            <button
+              class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+            >
+              Learn More →
+            </button>
+          </div>
+
+          <!-- Card 5: Cyber Security -->
+          <div
+            class="bg-[#26c6da] dark:bg-cyan-700 text-white rounded-2xl p-6 shadow hover:shadow-lg transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="../assets/images/cyber.png"
+                alt="Cyber Icon"
+                class="w-12 h-12"
+              />
+              <h3 class="text-xl font-semibold">Cyber Security</h3>
+            </div>
+            <p class="mb-4 text-base">
+              Lessons on design that cover the most recent developments.
+            </p>
+            <button
+              class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+            >
+              Learn More →
+            </button>
+          </div>
+
+          <!-- Card 6: Full Stack -->
+          <div
+            class="bg-[#26c6da] dark:bg-cyan-700 text-white rounded-2xl p-6 shadow hover:shadow-lg transition"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="../assets/images/fullstack.png"
+                alt="Full Stack Icon"
+                class="w-12 h-12"
+              />
+              <h3 class="text-xl font-semibold">Full Stack</h3>
+            </div>
+            <p class="mb-4 text-base">
+              Lessons on design that cover the most recent developments.
+            </p>
+            <button
+              class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+            >
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full py-20 px-4 sm:px-6 md:px-10 bg-[#f5f8ff] dark:bg-black"
+      >
+        <div class="max-w-7xl mx-auto text-center mb-14">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-black dark:text-white leading-tight"
+          >
+            Popular Courses
+          </h2>
+        </div>
+
+        <div
+          class="max-w-7xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- Course Card -->
+          <div
+            class="bg-white dark:bg-gray-900 rounded-2xl shadow hover:shadow-xl transition duration-300 hover:scale-105"
+          >
+            <img
+              src="/assets/images/sql.png"
+              alt="SQL Course"
+              class="w-full rounded-t-2xl aspect-video object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg font-semibold text-teal-900 dark:text-teal-300 mb-2"
+              >
+                SQL Courses
+              </h3>
+              <p class="text-sm mb-1 dark:text-gray-300">
+                <strong>Duration :</strong> 10 hours 30 mins
+              </p>
+              <p
+                class="text-base mb-3 text-green-700 dark:text-green-400 font-medium"
+              >
+                $95.99
+                <span class="text-red-600 dark:text-red-400 ml-2">*Free</span>
+              </p>
+              <div
+                class="flex items-center gap-2 text-yellow-500 text-base mb-4"
+              >
+                ★★★★★
+                <span class="text-gray-600 dark:text-gray-400 text-sm"
+                  >(43,435)</span
+                >
+              </div>
+              <button
+                class="inline-block bg-teal-700 hover:bg-teal-800 focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 dark:focus:ring-offset-gray-900 text-white text-base font-medium px-6 py-3 rounded-lg transition duration-300"
+              >
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Repeat for other cards (same structure) -->
+          <div
+            class="bg-white dark:bg-gray-900 rounded-2xl shadow hover:shadow-xl transition duration-300 hover:scale-105"
+          >
+            <img
+              src="/assets/images/dev.png"
+              alt="Web Dev Course"
+              class="w-full rounded-t-2xl aspect-video object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg font-semibold text-teal-900 dark:text-teal-300 mb-2"
+              >
+                Web Developers Courses
+              </h3>
+              <p class="text-sm mb-1 dark:text-gray-300">
+                <strong>Duration :</strong> 20 hours 25 mins
+              </p>
+              <p
+                class="text-base mb-3 text-green-700 dark:text-green-400 font-medium"
+              >
+                $80.99
+                <span class="text-red-600 dark:text-red-400 ml-2">*Free</span>
+              </p>
+              <div
+                class="flex items-center gap-2 text-yellow-500 text-base mb-4"
+              >
+                ★★★★★
+                <span class="text-gray-600 dark:text-gray-400 text-sm"
+                  >(43,003)</span
+                >
+              </div>
+              <button
+                class="inline-block bg-teal-700 hover:bg-teal-800 focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 dark:focus:ring-offset-gray-900 text-white text-base font-medium px-6 py-3 rounded-lg transition duration-300"
+              >
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-900 rounded-2xl shadow hover:shadow-xl transition duration-300 hover:scale-105"
+          >
+            <img
+              src="/assets/images/database.png"
+              alt="Database Course"
+              class="w-full rounded-t-2xl aspect-video object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg font-semibold text-teal-900 dark:text-teal-300 mb-2"
+              >
+                Database Courses
+              </h3>
+              <p class="text-sm mb-1 dark:text-gray-300">
+                <strong>Duration :</strong> 4 hours
+              </p>
+              <p
+                class="text-base mb-3 text-green-700 dark:text-green-400 font-medium"
+              >
+                $77.99
+                <span class="text-red-600 dark:text-red-400 ml-2">*Free</span>
+              </p>
+              <div
+                class="flex items-center gap-2 text-yellow-500 text-base mb-4"
+              >
+                ★★★★★
+                <span class="text-gray-600 dark:text-gray-400 text-sm"
+                  >(39,500)</span
+                >
+              </div>
+              <button
+                class="inline-block bg-teal-700 hover:bg-teal-800 focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 dark:focus:ring-offset-gray-900 text-white text-base font-medium px-6 py-3 rounded-lg transition duration-300"
+              >
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Full Stack Developer Card -->
+          <div
+            class="bg-white dark:bg-gray-900 rounded-2xl shadow hover:shadow-xl transition duration-300 hover:scale-105"
+          >
+            <img
+              src="/assets/images/fulldev.png"
+              alt="Full Stack Course"
+              class="w-full rounded-t-2xl aspect-video object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg font-semibold text-teal-900 dark:text-teal-300 mb-2"
+              >
+                Full Stack Developer
+              </h3>
+              <p class="text-sm mb-1 dark:text-gray-300">
+                <strong>Duration :</strong> 6 hours 30 mins
+              </p>
+              <p
+                class="text-base mb-3 text-red-600 dark:text-red-400 font-medium"
+              >
+                $80.99
+              </p>
+              <div
+                class="flex items-center gap-2 text-yellow-500 text-base mb-4"
+              >
+                ★★★★★
+                <span class="text-gray-600 dark:text-gray-400 text-sm"
+                  >(39,495)</span
+                >
+              </div>
+              <a
+                href="/HTML/checkout-1.html"
+                class="inline-block bg-teal-700 hover:bg-teal-800 focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 dark:focus:ring-offset-gray-900 text-white text-base font-medium px-6 py-3 rounded-lg transition duration-300"
+              >
+                Buy Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Data Analysis Card -->
+          <div
+            class="bg-white dark:bg-gray-900 rounded-2xl shadow hover:shadow-xl transition duration-300 hover:scale-105"
+          >
+            <img
+              src="/assets/images/analysis.png"
+              alt="Data Analysis"
+              class="w-full rounded-t-2xl aspect-video object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg font-semibold text-teal-900 dark:text-teal-300 mb-2"
+              >
+                Data Analysis
+              </h3>
+              <p class="text-sm mb-1 dark:text-gray-300">
+                <strong>Duration :</strong> 7 hours 12 mins
+              </p>
+              <p
+                class="text-base mb-3 text-red-600 dark:text-red-400 font-medium"
+              >
+                $70.99
+              </p>
+              <div
+                class="flex items-center gap-2 text-yellow-500 text-base mb-4"
+              >
+                ★★★★★
+                <span class="text-gray-600 dark:text-gray-400 text-sm"
+                  >(47,435)</span
+                >
+              </div>
+              <a
+                href="/HTML/checkout-2.html"
+                class="inline-block bg-teal-700 hover:bg-teal-800 focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 dark:focus:ring-offset-gray-900 text-white text-base font-medium px-6 py-3 rounded-lg transition duration-300"
+              >
+                Buy Now
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-900 rounded-2xl shadow hover:shadow-xl transition duration-300 hover:scale-105"
+          >
+            <img
+              src="/assets/images/clcomputing.png"
+              alt="Cloud Computing"
+              class="w-full rounded-t-2xl aspect-video object-cover"
+            />
+            <div class="p-6">
+              <h3
+                class="text-lg font-semibold text-teal-900 dark:text-teal-300 mb-2"
+              >
+                Cloud Computing
+              </h3>
+              <p class="text-sm mb-1 dark:text-gray-300">
+                <strong>Duration :</strong> 7 hours 12 mins
+              </p>
+              <p
+                class="text-base mb-3 text-red-600 dark:text-red-400 font-medium"
+              >
+                $90.99
+              </p>
+              <div
+                class="flex items-center gap-2 text-yellow-500 text-base mb-4"
+              >
+                ★★★★★
+                <span class="text-gray-600 dark:text-gray-400 text-sm"
+                  >(48,435)</span
+                >
+              </div>
+              <a
+                href="/HTML/checkout-3.html"
+                class="inline-block bg-teal-700 hover:bg-teal-800 focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 dark:focus:ring-offset-gray-900 text-white text-base font-medium px-6 py-3 rounded-lg transition duration-300"
+              >
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full py-20 px-4 sm:px-6 md:px-10 bg-white dark:bg-black"
+      >
+        <div class="max-w-7xl mx-auto text-center mb-14">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4"
+          >
+            Meet the Heroes
+          </h2>
+          <p
+            class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-base sm:text-lg"
+          >
+            On Weekend UX, instructors from all over the world instruct millions
+            of students. We offer the knowledge and abilities.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
+        >
+          <!-- Card Template -->
+          <div
+            class="bg-[#f5f8ff] rounded-xl p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition"
+          >
+            <img
+              src="/assets/images/angela.png"
+              alt="Angela Yu"
+              class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 object-cover"
+            />
+            <h3 class="text-lg sm:text-xl font-semibold text-black">
+              Angela Yu
+            </h3>
+            <p class="text-green-600 font-medium mb-2 text-sm sm:text-base">
+              Full Stack Development Instructor
+            </p>
+            <p class="text-sm sm:text-base text-gray-700 mb-4">
+              Lead instructor at App Brewery. Known for bestselling coding
+              bootcamps.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/angela-yu1/?originalSubdomain=uk"
+              class="inline-block"
+              aria-label="LinkedIn Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-black hover:text-blue-700 transition"
+              >
+                <path
+                  d="M20.447 20.452H17.21V15.4c0-1.203-.024-2.75-1.676-2.75-1.676 0-1.933 1.31-1.933 2.662v5.14h-3.235V9h3.105v1.561h.045c.433-.822 1.493-1.684 3.07-1.684 3.285 0 3.89 2.163 3.89 4.977v6.598zM5.337 7.433a1.875 1.875 0 1 1 0-3.75 1.875 1.875 0 0 1 0 3.75zM6.789 20.452H3.885V9h2.904v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.2 24 24 23.225 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Repeat for Jose Portilla -->
+          <div
+            class="bg-[#f5f8ff] rounded-xl p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition"
+          >
+            <img
+              src="/assets/images/jose.png"
+              alt="Jose Portilla"
+              class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 object-cover"
+            />
+            <h3 class="text-lg sm:text-xl font-semibold text-black">
+              Jose Portilla
+            </h3>
+            <p class="text-green-600 font-medium mb-2 text-sm sm:text-base">
+              Python & Data Science Instructor
+            </p>
+            <p class="text-sm sm:text-base text-gray-700 mb-4">
+              Director of Data Science at Pierian Training. Python and ML
+              expert.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/jmportilla/"
+              class="inline-block"
+              aria-label="LinkedIn Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-black hover:text-blue-700 transition"
+              >
+                <path
+                  d="M20.447 20.452H17.21V15.4c0-1.203-.024-2.75-1.676-2.75-1.676 0-1.933 1.31-1.933 2.662v5.14h-3.235V9h3.105v1.561h.045c.433-.822 1.493-1.684 3.07-1.684 3.285 0 3.89 2.163 3.89 4.977v6.598zM5.337 7.433a1.875 1.875 0 1 1 0-3.75 1.875 1.875 0 0 1 0 3.75zM6.789 20.452H3.885V9h2.904v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.2 24 24 23.225 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Repeat for Colt Steele -->
+          <div
+            class="bg-[#f5f8ff] rounded-xl p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition"
+          >
+            <img
+              src="/assets/images/colt.png"
+              alt="Colt Steele"
+              class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 object-cover"
+            />
+            <h3 class="text-lg sm:text-xl font-semibold text-black">
+              Colt Steele
+            </h3>
+            <p class="text-green-600 font-medium mb-2 text-sm sm:text-base">
+              Web Development Educator
+            </p>
+            <p class="text-sm sm:text-base text-gray-700 mb-4">
+              Former bootcamp lead instructor. Specializes in JavaScript and
+              Node.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/coltsteele/"
+              class="inline-block"
+              aria-label="LinkedIn Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-black hover:text-blue-700 transition"
+              >
+                <path
+                  d="M20.447 20.452H17.21V15.4c0-1.203-.024-2.75-1.676-2.75-1.676 0-1.933 1.31-1.933 2.662v5.14h-3.235V9h3.105v1.561h.045c.433-.822 1.493-1.684 3.07-1.684 3.285 0 3.89 2.163 3.89 4.977v6.598zM5.337 7.433a1.875 1.875 0 1 1 0-3.75 1.875 1.875 0 0 1 0 3.75zM6.789 20.452H3.885V9h2.904v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.2 24 24 23.225 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Repeat for Mosh Hamedani -->
+          <div
+            class="bg-[#f5f8ff] rounded-xl p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition"
+          >
+            <img
+              src="/assets/images/mosh.png"
+              alt="Mosh Hamedani"
+              class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 object-cover"
+            />
+            <h3 class="text-lg sm:text-xl font-semibold text-black">
+              Mosh Hamedani
+            </h3>
+            <p class="text-green-600 font-medium mb-2 text-sm sm:text-base">
+              Software Engineer & Instructor
+            </p>
+            <p class="text-sm sm:text-base text-gray-700 mb-4">
+              Creator of Code with Mosh. Expert in React, C#, and design
+              patterns.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/mosh-hamedani/"
+              class="inline-block"
+              aria-label="LinkedIn Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-black hover:text-blue-700 transition"
+              >
+                <path
+                  d="M20.447 20.452H17.21V15.4c0-1.203-.024-2.75-1.676-2.75-1.676 0-1.933 1.31-1.933 2.662v5.14h-3.235V9h3.105v1.561h.045c.433-.822 1.493-1.684 3.07-1.684 3.285 0 3.89 2.163 3.89 4.977v6.598zM5.337 7.433a1.875 1.875 0 1 1 0-3.75 1.875 1.875 0 0 1 0 3.75zM6.789 20.452H3.885V9h2.904v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.2 24 24 23.225 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-[#f9f9f9] dark:bg-gray-900 text-black dark:text-white px-6 sm:px-10 lg:px-20 py-12"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20"
+      >
+        <!-- Logo and Description -->
+        <div class="-ml-2 md:-ml-4 space-y-4 max-w-md">
+          <img
+            src="/assets/images/logo.png"
+            alt="Logo"
+            class="w-15 h-10 mb-2"
+          />
+          <p class="text-base leading-relaxed dark:text-gray-300">
+            is a responsive learning platform designed for IT students. It
+            offers a variety of curated courses to help learners build strong
+            foundations in essential tech skills, such as programming,
+            networking, and system basics.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Quick Links</h3>
+          <ul class="space-y-2 text-base">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/about.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/courses.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/contact.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Socials and Contact -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Socials</h3>
+          <div class="flex items-center flex-wrap gap-4 text-xl">
+            <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="hover:text-blue-400 dark:hover:text-blue-300"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+            <a href="#" class="hover:text-red-500 dark:hover:text-red-400"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+          <div class="pt-2">
+            <h4 class="font-semibold">Contact Us</h4>
+            <p class="text-base mt-1 dark:text-gray-300">+855 17797274</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-[1.5px] bg-black dark:bg-white mt-12"></div>
+
+      <!-- Copyright -->
+      <div class="text-center font-bold text-base mt-4 dark:text-gray-300">
+        ©2025 - Teachuza. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="/assets/js/theme-toggle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3dd1bda519.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

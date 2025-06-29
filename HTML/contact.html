@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="w-full px-4 sm:px-8 lg:px-16 py-4 bg-white dark:bg-gray-900 shadow-md transition-colors duration-300"
+      >
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="/assets/images/logo.png" alt="Logo" class="w-14 h-10" />
+            <span class="font-bold text-xl dark:text-white">Teachuza</span>
+          </div>
+
+          <!-- Nav Links -->
+          <div class="hidden md:flex gap-10 text-base font-medium">
+            <a
+              href="/index.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >Home</a
+            >
+            <a
+              href="/HTML/about.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >About</a
+            >
+            <a
+              href="/HTML/courses.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >Courses</a
+            >
+          </div>
+
+          <!-- Contact & Theme Toggle -->
+          <div class="flex items-center gap-6">
+            <!-- Contact Us -->
+            <a
+              href="/HTML/contact.html"
+              class="bg-blue-600 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-full transition duration-200 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Contact Us
+            </a>
+
+            <!-- Light Toggle Button -->
+            <button
+              onclick="toggleDarkMode()"
+              class="w-36 h-12 bg-yellow-300 rounded-full flex items-center px-1 transition-all duration-300 dark:hidden"
+            >
+              <div
+                class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white"
+              ></div>
+            </button>
+
+            <!-- Dark Toggle Button -->
+            <button
+              onclick="toggleDarkMode()"
+              class="w-36 h-12 bg-[#0D2551] rounded-full items-center justify-end px-1 transition-all duration-300 hidden dark:flex"
+            >
+              <div
+                class="w-10 h-10 bg-[#15B9EA] rounded-full flex items-center justify-center text-white"
+              ></div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="w-full py-20 px-4 sm:px-6 lg:px-8 bg-accent dark:bg-gray-900"
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between"
+        >
+          <!-- Text Section -->
+          <div class="md:w-1/2 md:pr-10 text-center md:text-left">
+            <h1
+              class="text-3xl sm:text-4xl font-bold mb-4 text-black dark:text-white"
+            >
+              Contact <span class="text-secondary">Us</span>
+            </h1>
+            <p
+              class="text-base sm:text-lg text-gray-800 dark:text-gray-300 mb-6"
+            >
+              We are so happy to communicate with our beloved customers. You can
+              ask whatever you need.
+            </p>
+          </div>
+
+          <!-- Image Section -->
+          <div class="md:w-1/2 md:pl-10 mb-10 md:mb-0 text-center">
+            <img
+              src="/assets/images/asking.png"
+              alt="Puzzle Illustration"
+              class="w-full max-w-md mx-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="bg-primary dark:bg-gray-800 py-20 px-4 sm:px-6 lg:px-8">
+        <!-- Heading -->
+        <h2
+          class="text-xl sm:text-2xl lg:text-3xl font-semibold text-center mb-10 text-black dark:text-white"
+        >
+          Let us know if you need more assistance
+        </h2>
+
+        <!-- Contact Box -->
+        <div
+          class="max-w-7xl mx-auto bg-[#f5f8ff] dark:bg-gray-900 p-8 rounded-2xl shadow"
+        >
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input
+                type="text"
+                placeholder="First name..."
+                class="rounded-full px-6 py-4 bg-[#d1e8f3] dark:bg-gray-700 dark:text-white w-full placeholder:text-gray-500 dark:placeholder:text-gray-400"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Last name..."
+                class="rounded-full px-6 py-4 bg-[#d1e8f3] dark:bg-gray-700 dark:text-white w-full placeholder:text-gray-500 dark:placeholder:text-gray-400"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email address..."
+                class="rounded-full px-6 py-4 bg-[#d1e8f3] dark:bg-gray-700 dark:text-white w-full placeholder:text-gray-500 dark:placeholder:text-gray-400 md:col-span-1"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Where are you from?"
+                class="rounded-full px-6 py-4 bg-[#d1e8f3] dark:bg-gray-700 dark:text-white w-full placeholder:text-gray-500 dark:placeholder:text-gray-400 md:col-span-1"
+                required
+              />
+            </div>
+
+            <!-- Message Field -->
+            <textarea
+              rows="6"
+              placeholder="Type your message..."
+              class="rounded-2xl px-6 py-4 bg-[#d1e8f3] dark:bg-gray-700 dark:text-white w-full placeholder:text-gray-500 dark:placeholder:text-gray-400 resize-none"
+              required
+            ></textarea>
+
+            <!-- Submit Button -->
+            <div class="text-center pt-4">
+              <button
+                type="submit"
+                class="w-40 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-500 dark:focus:ring-offset-gray-900"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#f9f9f9] dark:bg-gray-900 text-black dark:text-white px-6 sm:px-10 lg:px-20 py-12"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20"
+      >
+        <!-- Logo and Description -->
+        <div class="-ml-2 md:-ml-4 space-y-4 max-w-md">
+          <img
+            src="/assets/images/logo.png"
+            alt="Logo"
+            class="w-15 h-10 mb-2"
+          />
+          <p class="text-base leading-relaxed dark:text-gray-300">
+            is a responsive learning platform designed for IT students. It
+            offers a variety of curated courses to help learners build strong
+            foundations in essential tech skills, such as programming,
+            networking, and system basics.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Quick Links</h3>
+          <ul class="space-y-2 text-base">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/about.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/courses.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/contact.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Socials and Contact -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Socials</h3>
+          <div class="flex items-center flex-wrap gap-4 text-xl">
+            <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="hover:text-blue-400 dark:hover:text-blue-300"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+            <a href="#" class="hover:text-red-500 dark:hover:text-red-400"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+          <div class="pt-2">
+            <h4 class="font-semibold">Contact Us</h4>
+            <p class="text-base mt-1 dark:text-gray-300">+855 17797274</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-[1.5px] bg-black dark:bg-white mt-12"></div>
+
+      <!-- Copyright -->
+      <div class="text-center font-bold text-base mt-4 dark:text-gray-300">
+        ©2025 - Teachuza. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="/assets/js/theme-toggle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3dd1bda519.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/src/output.css" />
+     <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+  </head>
+  <body>
+    <header>
+            <nav
+      class="w-full px-4 sm:px-8 lg:px-16 py-4 bg-white dark:bg-gray-900 shadow-md transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="/assets/images/logo.png" alt="Logo" class="w-14 h-10" />
+          <span class="font-bold text-xl dark:text-white">Teachuza</span>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="hidden md:flex gap-10 text-base font-medium">
+          <a href="#" class="hover:text-blue-700 transition dark:text-white"
+            >Home</a
+          >
+          <a href="#" class="hover:text-blue-700 transition dark:text-white"
+            >About</a
+          >
+          <a href="#" class="hover:text-blue-700 transition dark:text-white"
+            >Courses</a
+          >
+        </div>
+
+        <!-- Contact & Theme Toggle -->
+        <div class="flex items-center gap-6">
+          <!-- Contact Us -->
+          <a
+            href="#"
+            class="bg-blue-600 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-full transition duration-200 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Contact Us
+          </a>
+
+          <!-- Light Toggle Button -->
+          <button
+            onclick="toggleDarkMode()"
+            class="w-36 h-12 bg-yellow-300 rounded-full flex items-center px-1 transition-all duration-300 dark:hidden"
+          >
+            <div
+              class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white"
+            ></div>
+          </button>
+
+          <!-- Dark Toggle Button -->
+          <button
+            onclick="toggleDarkMode()"
+            class="w-36 h-12 bg-[#0D2551] rounded-full items-center justify-end px-1 transition-all duration-300 hidden dark:flex"
+          >
+            <div
+              class="w-10 h-10 bg-[#15B9EA] rounded-full flex items-center justify-center text-white"
+            ></div>
+          </button>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="w-full py-20 px-6 md:px-10 bg-white">
+      <div
+        class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+      >
+        <!-- Left Text Content -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h1 class="text-4xl font-bold text-black leading-tight mb-4">
+            Up Your <span class="text-blue-700">Skills</span><br />
+            To <span class="text-blue-700">Advance Your Career</span><br />
+            Path
+          </h1>
+          <p class="text-lg text-gray-700 mb-6">
+            Learn UI-UX Design skills with weekend UX.<br
+              class="hidden sm:block"
+            />
+            The latest online learning system and material<br
+              class="hidden sm:block"
+            />
+            that help your knowledge growing.
+          </p>
+          <a
+            href="/HTML/courses.html"
+            class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded shadow-md transition duration-200"
+          >
+            Get Started
+          </a>
+
+          <!-- Skills Row -->
+          <div
+            class="mt-8 flex flex-wrap justify-center md:justify-start gap-6"
+          >
+            <div class="flex items-center space-x-2 text-gray-700">
+              <img
+                src="/assets/images/techskill.png"
+                class="w-5 h-5"
+                alt="Technical Skill"
+              />
+              <span>Technical Skill</span>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-700">
+              <img
+                src="/assets/images/career.png"
+                class="w-5 h-5"
+                alt="Career-Oriented"
+              />
+              <span>Career-Oriented</span>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-700">
+              <img
+                src="/assets/images/idea.png"
+                class="w-5 h-5"
+                alt="Creative Thinking"
+              />
+              <span>Creative Thinking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image + Floating Cards -->
+        <div class="w-full md:w-1/2 relative flex justify-center">
+          <div class="relative">
+            <!-- Circle Background -->
+            <div
+              class="rounded-full bg-[#15B98A] w-[340px] h-[340px] md:w-[400px] md:h-[400px]"
+            ></div>
+
+            <!-- Student Image -->
+            <img
+              src="/assets/images/student.png"
+              alt="Student"
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[240px] md:max-w-[280px] z-10"
+            />
+
+            <!-- Floating Cards -->
+
+            <!-- Online Courses Card -->
+            <div
+              class="absolute top-5 left-0 bg-white border border-[#D1D5DB] rounded-xl p-3 shadow-md flex items-center gap-3 w-[160px] z-20"
+            >
+              <div class="bg-[#1E1EFF] p-2 rounded-md">
+                <img
+                  src="/assets/images/onlineedu.png"
+                  class="w-5 h-5 text-white"
+                  alt="Courses"
+                />
+              </div>
+              <div>
+                <p class="text-sm font-bold text-gray-900">3K+</p>
+                <p class="text-xs text-gray-500">Online Courses</p>
+              </div>
+            </div>
+
+            <!-- Students Enrollment Card -->
+            <div
+              class="absolute top-0 right-0 bg-white border border-[#D1D5DB] rounded-xl p-3 shadow-md w-[140px] text-center z-20"
+            >
+              <div class="relative w-8 h-8 mx-auto mb-1">
+                <div
+                  class="w-full h-full rounded-full border-4 border-gray-200"
+                ></div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full rounded-full border-t-4 border-blue-600 transform rotate-[120deg]"
+                ></div>
+              </div>
+              <p class="text-sm font-bold text-gray-900">1K+</p>
+              <p class="text-xs text-gray-500">Students Enrollment</p>
+            </div>
+
+            <!-- Tutors Card -->
+            <div
+              class="absolute bottom-0 right-4 bg-white border border-[#D1D5DB] rounded-xl p-3 shadow-md flex items-center gap-3 w-[140px] z-20"
+            >
+              <div class="bg-[#1E1EFF] p-2 rounded-md">
+                <img
+                  src="/assets/images/tutor.png"
+                  class="w-5 h-5 text-white"
+                  alt="Tutors"
+                />
+              </div>
+              <div>
+                <p class="text-sm font-bold text-gray-900">1K+</p>
+                <p class="text-xs text-gray-500">Tutors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-[#160EFF] py-12 px-4 sm:px-6 md:px-10">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center text-white"
+      >
+        <!-- Courses -->
+        <div>
+          <h2 class="text-4xl font-bold mb-2">3000+</h2>
+          <p class="text-base sm:text-lg font-medium">Courses</p>
+        </div>
+
+        <!-- Tutors -->
+        <div>
+          <h2 class="text-4xl font-bold mb-2">1000+</h2>
+          <p class="text-base sm:text-lg font-medium">Tutors</p>
+        </div>
+
+        <!-- Students -->
+        <div>
+          <h2 class="text-4xl font-bold mb-2">1000+</h2>
+          <p class="text-base sm:text-lg font-medium">Students</p>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-[#F4F7FF] py-14 px-4 sm:px-6 md:px-10">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Section Heading -->
+        <h2
+          class="text-xl sm:text-2xl md:text-3xl font-semibold text-black mb-10"
+        >
+          We collaborate with many
+          <span class="text-blue-700 font-bold">top universities</span>
+        </h2>
+
+        <!-- Universities Logos -->
+        <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10">
+          <img
+            src="/assets/images/columbia.png"
+            alt="Columbia University"
+            class="h-16 sm:h-20 object-contain"
+          />
+          <img
+            src="/assets/images/mit.png"
+            alt="MIT"
+            class="h-16 sm:h-20 object-contain"
+          />
+          <img
+            src="/assets/images/stanford.png"
+            alt="Stanford University"
+            class="h-16 sm:h-20 object-contain"
+          />
+          <img
+            src="/assets/images/nus.png"
+            alt="National University of Singapore"
+            class="h-16 sm:h-20 object-contain"
+          />
+          <img
+            src="/assets/images/tsinghua.png"
+            alt="Tsinghua University"
+            class="h-16 sm:h-20 object-contain"
+          />
+          <img
+            src="/assets/images/malaya.png"
+            alt="University of Malaya"
+            class="h-16 sm:h-20 object-contain"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- FAQ SECTION -->
+    <section class="w-full py-14 px-6 md:px-10 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">
+          Frequently Asked Questions
+        </h2>
+
+        <!-- All FAQs wrapped and spaced -->
+        <div class="space-y-4">
+          <!-- Single FAQ Item -->
+          <div class="rounded-xl overflow-hidden shadow-md">
+            <button
+              class="faq-toggle w-full flex justify-between items-center px-6 py-4 bg-[#160EFF] text-white text-lg sm:text-xl font-semibold rounded-t-xl transition-all duration-300"
+            >
+              <span>How long does it take to finish a course?</span>
+              <svg
+                class="w-5 h-5 transform transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="faq-answer hidden bg-blue-100 text-black px-6 py-4 text-base sm:text-lg leading-relaxed rounded-b-xl"
+            >
+              It depends on the course. Some take a few hours, while others
+              might take several weeks if you study part-time.
+            </div>
+          </div>
+
+          <!-- Repeat same structure for Items 2–5 -->
+
+          <div class="rounded-xl overflow-hidden shadow-md">
+            <button
+              class="faq-toggle w-full flex justify-between items-center px-6 py-4 bg-[#160EFF] text-white text-lg sm:text-xl font-semibold rounded-t-xl transition-all duration-300"
+            >
+              <span>Can I learn at my own pace?</span>
+              <svg
+                class="w-5 h-5 transform transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="faq-answer hidden bg-blue-100 text-black px-6 py-4 text-base sm:text-lg leading-relaxed rounded-b-xl"
+            >
+              Yes, all courses are self-paced. You can learn anytime, from
+              anywhere, at a speed that fits your schedule.
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-md">
+            <button
+              class="faq-toggle w-full flex justify-between items-center px-6 py-4 bg-[#160EFF] text-white text-lg sm:text-xl font-semibold rounded-t-xl transition-all duration-300"
+            >
+              <span>Will I get a certificate?</span>
+              <svg
+                class="w-5 h-5 transform transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="faq-answer hidden bg-blue-100 text-black px-6 py-4 text-base sm:text-lg leading-relaxed rounded-b-xl"
+            >
+              Yes, many courses offer a certificate upon successful completion
+              which you can add to your resume or LinkedIn profile.
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-md">
+            <button
+              class="faq-toggle w-full flex justify-between items-center px-6 py-4 bg-[#160EFF] text-white text-lg sm:text-xl font-semibold rounded-t-xl transition-all duration-300"
+            >
+              <span>Do I need experience to start?</span>
+              <svg
+                class="w-5 h-5 transform transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="faq-answer hidden bg-blue-100 text-black px-6 py-4 text-base sm:text-lg leading-relaxed rounded-b-xl"
+            >
+              No, most beginner courses are designed for people with zero
+              experience. We guide you step by step.
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden shadow-md">
+            <button
+              class="faq-toggle w-full flex justify-between items-center px-6 py-4 bg-[#160EFF] text-white text-lg sm:text-xl font-semibold rounded-t-xl transition-all duration-300"
+            >
+              <span>What can I learn in your IT courses?</span>
+              <svg
+                class="w-5 h-5 transform transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="faq-answer hidden bg-blue-100 text-black px-6 py-4 text-base sm:text-lg leading-relaxed rounded-b-xl"
+            >
+              You can learn coding (like HTML, JavaScript), app development,
+              cybersecurity basics, networking and more depending on the course.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+    <footer
+      class="bg-[#f9f9f9] dark:bg-gray-900 text-black dark:text-white px-6 sm:px-10 lg:px-20 py-12"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20"
+      >
+        <!-- Logo and Description -->
+        <div class="-ml-2 md:-ml-4 space-y-4 max-w-md">
+          <img
+            src="/assets/images/logo.png"
+            alt="Logo"
+            class="w-15 h-10 mb-2"
+          />
+          <p class="text-base leading-relaxed dark:text-gray-300">
+            is a responsive learning platform designed for IT students. It
+            offers a variety of curated courses to help learners build strong
+            foundations in essential tech skills, such as programming,
+            networking, and system basics.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Quick Links</h3>
+          <ul class="space-y-2 text-base">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/about.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/courses.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/contact.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Socials and Contact -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Socials</h3>
+          <div class="flex items-center flex-wrap gap-4 text-xl">
+            <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="hover:text-blue-400 dark:hover:text-blue-300"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+            <a href="#" class="hover:text-red-500 dark:hover:text-red-400"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+          <div class="pt-2">
+            <h4 class="font-semibold">Contact Us</h4>
+            <p class="text-base mt-1 dark:text-gray-300">+855 17797274</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-[1.5px] bg-black dark:bg-white mt-12"></div>
+
+      <!-- Copyright -->
+      <div class="text-center font-bold text-base mt-4 dark:text-gray-300">
+        ©2025 - Teachuza. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Toggle Script -->
+    <script>
+      document.querySelectorAll(".faq-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+          const answer = button.nextElementSibling;
+          const icon = button.querySelector("svg");
+          answer.classList.toggle("hidden");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+    <script src="/assets/js/theme-toggle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3dd1bda519.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

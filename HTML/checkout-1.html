@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout| Full Stack</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+  </head>
+  <body class="">
+    <header>
+      <nav
+        class="w-full px-4 sm:px-8 lg:px-16 py-4 bg-white dark:bg-gray-900 shadow-md transition-colors duration-300"
+      >
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="/assets/images/logo.png" alt="Logo" class="w-14 h-10" />
+            <span class="font-bold text-xl dark:text-white">Teachuza</span>
+          </div>
+
+          <!-- Nav Links -->
+          <div class="hidden md:flex gap-10 text-base font-medium">
+            <a
+              href="/index.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >Home</a
+            >
+            <a
+              href="/HTML/about.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >About</a
+            >
+            <a
+              href="/HTML/courses.html"
+              class="hover:text-blue-700 transition dark:text-white"
+              >Courses</a
+            >
+          </div>
+
+          <!-- Contact & Theme Toggle -->
+          <div class="flex items-center gap-6">
+            <!-- Contact Us -->
+            <a
+              href="/HTML/contact.html"
+              class="bg-blue-600 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-full transition duration-200 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Contact Us
+            </a>
+
+            <!-- Light Toggle Button -->
+            <button
+              onclick="toggleDarkMode()"
+              class="w-36 h-12 bg-yellow-300 rounded-full flex items-center px-1 transition-all duration-300 dark:hidden"
+            >
+              <div
+                class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white"
+              ></div>
+            </button>
+
+            <!-- Dark Toggle Button -->
+            <button
+              onclick="toggleDarkMode()"
+              class="w-36 h-12 bg-[#0D2551] rounded-full items-center justify-end px-1 transition-all duration-300 hidden dark:flex"
+            >
+              <div
+                class="w-10 h-10 bg-[#15B9EA] rounded-full flex items-center justify-center text-white"
+              ></div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dark:bg-black">
+      <!-- Checkout Section -->
+      <section class="bg-[#f5f8ff] py-20 px-4 sm:px-6 lg:px-8 dark:bg-black">
+        <div
+          class="max-w-7xl mx-auto bg-white dark:bg-gray-900 p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg"
+        >
+          <h2
+            class="text-xl sm:text-2xl lg:text-3xl font-semibold text-center mb-10 text-black dark:text-white"
+          >
+            Checkout
+          </h2>
+
+          <!-- Card Type -->
+          <label class="block font-medium text-gray-700 dark:text-gray-300 mb-3"
+            >Card Type</label
+          >
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            <!-- Payment Cards -->
+            <div
+              class="w-full h-[80px] flex items-center justify-center border rounded-lg transition duration-300 hover:shadow-md hover:ring-2 hover:ring-blue-400 cursor-pointer bg-white dark:bg-gray-800"
+            >
+              <img
+                src="../assets/images/paypal.png"
+                alt="PayPal"
+                class="h-10 object-contain"
+              />
+            </div>
+            <div
+              class="w-full h-[80px] flex items-center justify-center border rounded-lg transition duration-300 hover:shadow-md hover:ring-2 hover:ring-blue-400 cursor-pointer bg-white dark:bg-gray-800"
+            >
+              <img
+                src="../assets/images/americanexpress.png"
+                alt="American Express"
+                class="h-10 object-contain"
+              />
+            </div>
+            <div
+              class="w-full h-[80px] flex items-center justify-center border rounded-lg transition duration-300 hover:shadow-md hover:ring-2 hover:ring-blue-400 cursor-pointer bg-white dark:bg-gray-800"
+            >
+              <img
+                src="../assets/images/visa.png"
+                alt="Visa"
+                class="h-10 object-contain"
+              />
+            </div>
+            <div
+              class="w-full h-[80px] flex items-center justify-center border rounded-lg transition duration-300 hover:shadow-md hover:ring-2 hover:ring-blue-400 cursor-pointer bg-white dark:bg-gray-800"
+            >
+              <img
+                src="../assets/images/master.png"
+                alt="MasterCard"
+                class="h-10 object-contain"
+              />
+            </div>
+          </div>
+
+          <!-- Checkout Form -->
+          <form class="space-y-6">
+            <div>
+              <label
+                class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >Name on Card</label
+              >
+              <input
+                type="text"
+                placeholder="Enter name on Card"
+                class="mt-1 w-full border rounded px-4 py-3 focus:ring-2 focus:ring-blue-400 outline-none bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
+              />
+            </div>
+
+            <div>
+              <label
+                class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >Card Number</label
+              >
+              <input
+                type="text"
+                placeholder="Enter Card Number"
+                class="mt-1 w-full border rounded px-4 py-3 focus:ring-2 focus:ring-blue-400 outline-none bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >Expiration Date (MM/YY)</label
+                >
+                <input
+                  type="text"
+                  placeholder="MM/YY"
+                  class="mt-1 w-full border rounded px-4 py-3 focus:ring-2 focus:ring-blue-400 outline-none bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
+                />
+              </div>
+              <div>
+                <label
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >CVC</label
+                >
+                <input
+                  type="text"
+                  placeholder="CVC"
+                  class="mt-1 w-full border rounded px-4 py-3 focus:ring-2 focus:ring-blue-400 outline-none bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
+                />
+              </div>
+            </div>
+
+            <div class="flex items-start gap-2 mt-2">
+              <input
+                type="checkbox"
+                id="saveInfo"
+                class="mt-1 dark:bg-gray-800"
+              />
+              <label
+                for="saveInfo"
+                class="text-sm text-gray-600 dark:text-gray-400"
+                >Save my information for faster checkout</label
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section class="flex justify-center mt-12 mb-20 px-4 pb-10">
+        <div
+          class="w-full max-w-3xl bg-[#eaf4ff] dark:bg-gray-900 p-6 sm:p-8 md:p-10 rounded-2xl shadow-md"
+        >
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            Summary
+          </h3>
+
+          <!-- Course Info -->
+          <div class="flex flex-col sm:flex-row items-center gap-6 mb-6">
+            <img
+              src="/assets/images/fulldev.png"
+              alt="Course"
+              class="w-24 h-24 rounded-xl object-cover"
+            />
+            <div class="text-center sm:text-left">
+              <p class="font-semibold text-gray-900 dark:text-white text-lg">
+                Full Stack Developer
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                6 hours 30 mins
+              </p>
+              <p class="text-2xl font-bold mt-2 text-black dark:text-white">
+                $80.99
+              </p>
+            </div>
+          </div>
+
+          <!-- Price Breakdown -->
+          <div
+            class="border-t border-gray-300 dark:border-gray-700 pt-6 space-y-4 text-sm text-gray-700 dark:text-gray-300"
+          >
+            <div class="flex justify-between font-semibold text-base">
+              <span>Subtotal</span>
+              <span>$80.99</span>
+            </div>
+            <div class="flex justify-between font-semibold text-base">
+              <span>Coupon Discount</span>
+              <span>0%</span>
+            </div>
+            <div class="flex justify-between font-semibold text-base">
+              <span>TAX</span>
+              <span>$5</span>
+            </div>
+            <div
+              class="border-t border-gray-300 dark:border-gray-700 pt-4 flex justify-between font-bold text-black dark:text-white text-lg"
+            >
+              <span>Total</span>
+              <span>$85.99</span>
+            </div>
+          </div>
+
+          <!-- Pay Button -->
+          <div class="text-center mt-10">
+            <button
+              class="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-10 py-3 rounded-2xl transition duration-300 shadow-lg hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2 dark:focus:ring-offset-gray-900 w-full sm:w-auto"
+            >
+              Pay $85.99
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#f9f9f9] dark:bg-gray-900 text-black dark:text-white px-6 sm:px-10 lg:px-20 py-12"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20"
+      >
+        <!-- Logo and Description -->
+        <div class="-ml-2 md:-ml-4 space-y-4 max-w-md">
+          <img
+            src="/assets/images/logo.png"
+            alt="Logo"
+            class="w-15 h-10 mb-2"
+          />
+          <p class="text-base leading-relaxed dark:text-gray-300">
+            is a responsive learning platform designed for IT students. It
+            offers a variety of curated courses to help learners build strong
+            foundations in essential tech skills, such as programming,
+            networking, and system basics.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Quick Links</h3>
+          <ul class="space-y-2 text-base">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/about.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/courses.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a
+                href="/HTML/contact.html"
+                class="hover:underline dark:hover:text-blue-400"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Socials and Contact -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold">Socials</h3>
+          <div class="flex items-center flex-wrap gap-4 text-xl">
+            <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="hover:text-blue-400 dark:hover:text-blue-300"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+            <a href="#" class="hover:text-red-500 dark:hover:text-red-400"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+          <div class="pt-2">
+            <h4 class="font-semibold">Contact Us</h4>
+            <p class="text-base mt-1 dark:text-gray-300">+855 17797274</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-[1.5px] bg-black dark:bg-white mt-12"></div>
+
+      <!-- Copyright -->
+      <div class="text-center font-bold text-base mt-4 dark:text-gray-300">
+        ©2025 - Teachuza. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="/assets/js/theme-toggle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3dd1bda519.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
